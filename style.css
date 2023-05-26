@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+body{
+    margin: 150px auto;
+    font-family: sans-serif;
+    background-image: url(./imgs/Icon\ Grid\ \(2\).svg);
+}
+.lang{
+    display: flex;
+}
+.lang a{
+    text-decoration: none;
+    color: #4C3D3D;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    color: #FFD95A;
+    text-shadow: 0 2px 0px #4C3D3D;
+    --moz-text-shadow: 0 2px 0px #4c3d4c;
+    margin: 15px auto;
+}
+.main{
+    margin: auto;
+    width: 500px;
+    backdrop-filter: blur(3px);
+    background-color: #4c3d3d5c;
+    padding: 25px;
+    border-radius: 3px;
+}
+@media (max-width: 767px) {
+    .main{
+        width: 350px;
+    }
+}
+.chose-coin{
+    display: flex;
+}
+input.usd{
+    border: 2px solid #4C3D3D;
+    padding: 5px 10px;
+    flex: 1;
+    background-color: inherit;
+    color: #4C3D3D;
+}
+input::placeholder{
+    color: #4C3D3D ;
+}
+input:focus,
+select{
+    outline: none;
+}
+img.submit{
+    cursor: pointer;
+    width: 50px;
+    display: block;
+    margin: 20px auto;
+}
+.selected select{
+    border: 2px solid #4C3D3D;
+    color: #4C3D3D;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    
+}
+.result-div{
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #4C3D3D;
+}
+.typed{
+    text-transform: uppercase;
+}
+.notic{
+    color: #4C3D3D;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
